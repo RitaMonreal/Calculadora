@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    align-items: center;
+}
+
+#fondo{
+    width: 100vw;
+    height: 100vh;
+    background-color: greenyellow;
+    display: flex;
+}
+
+
+#contenedorCalculadora{
+    display: flex;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    background-color: darkgray;
+    flex-wrap: wrap;
+}
+
+#pantalla{
+    width: 90%;
+    height: 70px;
+    background-color: aliceblue;
+    margin: 30px 25px 0px 25px;
+}
+
+#contedorBotones{
+    width: 90%;
+    height: 400px;
+    
+    background-color: rgb(128, 128, 128);
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    align-items: center;
+}
+
+.botones{
+    margin: auto;
+    height: 4px;
+    width: 4px;
+    background-color: darkorange;
+    padding: 30px;
+}
+
+
+
