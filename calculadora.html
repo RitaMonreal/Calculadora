@@ -75,18 +75,53 @@
         function operacionSeleccionada(elementId){
             if(document.getElementById("suma").id == elementId)
             {
-                numero1.value = resultado.value;
-                console.log(numero1)
+                numero1 = resultado.value;
+                operacion = "+";
+                resultado.value="";
             }
-                
             else if(document.getElementById("resta").id == elementId)
-                resultado.value = resultado.value  + "2";
+            {
+                numero1 = resultado.value;
+                operacion = "-";
+                resultado.value="";
+            }
             else if(document.getElementById("division").id==elementId)
-                resultado.value = resultado.value  + "3";
+            {
+                numero1 = resultado.value;
+                operacion = "/";
+                resultado.value="";
+            }
             else if(document.getElementById("multiplicacion").id==elementId)
-                resultado.value = resultado.value  + "4";
+            {
+                numero1 = resultado.value;
+                operacion = "*";
+                resultado.value="";
+            }
             else if(document.getElementById("igual").id==elementId)
-                resultado.value = resultado.value  + "5";
+            {
+                numero2 = resultado.value;
+                calcularResultado();
+            }
+        }
+
+        function calcularResultado(){
+            var total = 0;
+            switch(operacion){
+            case "+":
+                total = parseFloat(numero1) + parseFloat(numero2);
+                break;
+            case "-":
+                total = parseFloat(numero1) - parseFloat(numero2);
+                break;
+            case "*":
+                total = parseFloat(numero1) * parseFloat(numero2);
+                break;
+            case "/":
+                total = parseFloat(numero1) / parseFloat(numero2);
+                break;
+            }
+            borrar();
+            resultado.value = total;
         }
 
         function borrar(){
