@@ -2,36 +2,39 @@ body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
     align-items: center;
+    font-size: 16px;
 }
 
 #fondo{
     width: 100vw;
     height: 100vh;
-    background-color: greenyellow;
+    background-color: rgb(60, 179, 113);
     display: flex;
 }
 
 
 #contenedorCalculadora{
     display: flex;
-    width: 400px;
-    height: 600px;
+    width: 370px;
+    height: 400px;
     margin: auto;
     background-color: darkgray;
     flex-wrap: wrap;
 }
+p{
+    margin: 0 auto;
+}
 
 #pantalla{
     width: 90%;
-    height: 70px;
+    height: 50px;
     background-color: aliceblue;
     margin: 30px 25px 0px 25px;
 }
 
 #contedorBotones{
     width: 90%;
-    height: 400px;
-    
+    height: 200px;
     background-color: rgb(128, 128, 128);
     margin: 25px;
     display: flex;
@@ -41,12 +44,17 @@ body{
 }
 
 .botones{
-    margin: auto;
-    height: 4px;
-    width: 4px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    height: 45px;
+    width: 60px;
     background-color: darkorange;
-    padding: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
+input{
+    width: 100%;
+    height: 100%;
+}
