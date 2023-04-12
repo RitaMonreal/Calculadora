@@ -36,6 +36,7 @@ p{
     width: 90%;
     height: 200px;
     background-color: rgb(128, 128, 128);
+    
     margin: 25px;
     display: flex;
     flex-wrap: wrap;
